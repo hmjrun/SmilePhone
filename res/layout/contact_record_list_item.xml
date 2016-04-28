@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content" 
+    android:paddingTop="4dp" 
+    android:paddingLeft="5dp"
+    android:paddingBottom="3dp"
+    android:orientation="vertical">  
+  
+    <ImageView  
+        android:id="@+id/call_person_pic"  
+        android:layout_width="58dp"  
+        android:layout_height="58dp"  
+        android:layout_centerVertical="true"  
+        android:layout_marginLeft="4dip"  
+        android:layout_marginRight="4dip" 
+        android:layout_marginTop="4dip" 
+    
+        android:contentDescription="@string/desc" />  
+  
+    <LinearLayout  
+        android:id="@+id/record_info"
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_centerVertical="true"  
+        android:layout_toRightOf="@+id/call_person_pic"  
+        android:orientation="vertical" >  
+        
+        <ImageView  
+        android:id="@+id/call_type"  
+        android:layout_width="26dp"  
+        android:layout_height="26dp"  
+        android:layout_centerVertical="true"  
+        android:layout_marginLeft="4dip"  
+        android:layout_marginRight="4dip" 
+        android:layout_marginTop="4dip" 
+        android:background="@drawable/ic_calllog_outgoing_nomal"
+        android:contentDescription="@string/desc" />  
+  
+        <TextView  
+            android:id="@+id/name"  
+            android:layout_width="wrap_content"  
+            android:layout_toRightOf="@+id/call_type"  
+           android:layout_marginTop="-30dp"
+           android:layout_marginLeft="40dp"
+            android:layout_height="0dip"  
+            android:layout_weight="1"  
+            android:textAppearance="?android:textAppearanceMedium"  
+            android:textColor="#222222"
+            android:textSize="20dp"
+            />  
+ 
+        <TextView  
+            android:id="@+id/number"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:textAppearance="?android:textAppearanceSmall"  
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-5dp"
+            android:textColor="#626262"
+            android:textSize="19dp"
+            android:text="18770919030" /> 
+            
+        <TextView  
+        android:id="@+id/time"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_centerVertical="true"  
+        android:layout_toLeftOf="@+id/fg"  
+        android:textColor="#626262"
+         android:layout_marginLeft="5dp"
+         android:layout_marginTop="-5dp"
+        android:textSize="13dp"
+        android:text="2016年04月11日  14:26:12" />  
+    </LinearLayout>  
+    
+ 
+	  	<TextView  
+	        android:id="@+id/add_phonebook_btn"  
+	        android:layout_width="35dp"  
+	        android:layout_height="35dp"  
+	        android:layout_alignParentRight="true"  
+	        android:layout_centerVertical="true"  
+	        android:layout_marginRight="10dp"  
+	        
+	         /><!-- android:background="@drawable/edit_phone_book" -->
+<!-- 
+	    <TextView  
+	        android:id="@+id/call_btn"  
+	        android:layout_width="35dp"  
+	        android:layout_height="35dp"  
+	        android:layout_alignParentRight="true"  
+	        android:layout_centerVertical="true"  
+	          
+	        android:layout_marginRight="68dip"  
+	        android:background="@drawable/ic_call_outgoing" />  
+
+ -->
+  <!-- 
+  <ImageView  
+        android:id="@+id/fg"  
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+      	android:layout_marginTop="77dp"
+        android:background="@drawable/black_bg"
+        android:contentDescription="@string/desc" /> 
+       -->  
+</RelativeLayout> 

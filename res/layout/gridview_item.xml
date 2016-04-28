@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/name_shap"
+    android:gravity="center"
+     >
+
+	    <ImageView 
+	    android:src="@drawable/person_default"
+	    android:id="@+id/person_image"
+	    android:layout_width="86dp"
+	    android:layout_height="86dp"
+	    android:layout_marginTop="6dp"
+	    />
+	    <!-- 
+	    <TextView
+        android:id="@+id/tv_person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-25dp"
+        android:textColor="#EA8010"
+        android:textSize="17dp"
+        android:gravity="right"
+        android:text="黄美军"
+        />
+     -->
+		<TextView 
+		    android:id="@+id/tv_person_number"
+		    android:layout_marginTop="-2dp"
+		    android:layout_marginBottom="1dp"
+		    android:layout_width="110dp"
+		    android:layout_height="22dp"
+		    android:gravity="center_horizontal"
+		    android:textSize="16dp"
+		    android:textColor="#222222"
+		    android:text="187 7091 9030"
+		    />
+		
+		
+	
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_record_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+ 
+    <!-- 
+  <LinearLayout
+      android:focusable="true"
+      android:focusableInTouchMode="true" 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:background="@drawable/number_shap"
+      
+       >
+      <EditText
+             android:id="@+id/main_editNumber"
+             android:layout_width="wrap_content"
+             android:layout_height="60dp"
+             android:paddingLeft="10dp"
+             android:paddingRight="60dp"
+             android:ems="15"
+             android:background="@drawable/bg_edittext_normal"  
+             android:textSize="36sp"
+             android:textColor="#222222"
+             android:inputType="phone" /> 
+             
+ 	  <TextView  
+	        android:id="@+id/main_call_btn"  
+	        android:layout_width="50dp"  
+	        android:layout_height="50dp"  
+	        android:layout_marginTop="-24dp"
+	        android:layout_marginLeft="-90dp"
+	        
+	        android:background="@drawable/ic_call_outgoing" />  
+  </LinearLayout>
+      -->   
+    <ListView  
+        android:id="@+id/call_log_list"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_alignParentTop="true"  
+        android:cacheColorHint="#000000"  
+        
+        android:fadingEdge="none"  
+        android:scrollingCache="false"  
+        android:visibility="visible"
+        android:background="#E7E7E7"
+
+    
+         />  
+         
+   
+	<!-- 这里设置layout_alignParentBottom=true是最关键的，这个属性上级必须是RelativeLayout -->	         
+
+  	<LinearLayout
+  	    android:focusable="true"
+      	android:focusableInTouchMode="true" 
+  	    android:layout_width="fill_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_alignParentBottom="true"
+  	    android:background="#E7E7E7"
+  	    android:padding="5dp"
+  	    android:orientation="horizontal" >
+
+		 <EditText  
+		 android:id="@+id/edit_phone"  
+		 android:layout_height="45dp"  
+		 android:layout_width="250dp"
+		 android:paddingLeft="5dp"
+		 android:layout_marginLeft="5dp"
+		 android:textSize="36sp"
+		 android:background="@drawable/bg_edittext_normal"
+		 android:inputType="phone" 
+
+		  /> 
+		<Button
+		    android:id="@+id/edit_action_call"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#CED9DD"
+			android:layout_marginLeft="20dp"
+			android:layout_marginTop="-8dp"
+			android:background="@drawable/call_button_shap"
+			android:text="拨打"
+			android:textSize="22sp"
+			android:focusable="false"
+			
+			 />
+	</LinearLayout>
+  <!--     android:divider="#181818"#4B4B4B
+		android:dividerHeight="0.6px" 
+		
+		        android:divider="#181818"
+		android:dividerHeight="0.3px"  
+		<com.huangmj.myphonebook.WrapSlidingDrawer 
+		    android:id="@+id/sd" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="match_parent" 
+		    android:layout_marginTop="300dp"
+		    android:handle="@+id/iv" 
+		    android:content="@+id/myContent" 
+		    android:orientation="vertical">
+	      	<ImageView
+		        android:id="@+id/iv" 
+		        android:layout_width="match_parent" 
+		        android:layout_height="wrap_content" 
+		        android:background="#E7E7E7"
+		        android:src="@drawable/ic_call_outgoing"
+	      	/>
+        
+		    <RelativeLayout
+			      android:id="@id/myContent" 
+			      android:layout_width="match_parent" 
+			      android:layout_height="wrap_content"    
+			      android:background="#E7E7E7" 
+			      android:gravity="center">
+	
+				<EditText  
+			        android:id="@+id/edit_phone"  
+			        android:layout_width="match_parent"  
+			        android:layout_height="wrap_content"  
+		         />  
+	   
+		    	<RelativeLayout  
+		        	android:layout_width="fill_parent"  
+		        	android:layout_height="wrap_content" >  
+		   
+			        <android.inputmethodservice.KeyboardView  
+			            android:id="@+id/keyboard_view"  
+			            android:layout_width="fill_parent"  
+			            android:layout_height="wrap_content"  
+			            android:layout_alignParentBottom="true"  
+			            android:focusable="true"  
+			            android:focusableInTouchMode="true"  
+			            android:background="#E7E7E7"  
+			           
+			            android:keyTextColor="#ffffff"  
+			            android:visibility="gone" />  
+		    	</RelativeLayout>       
+		    </RelativeLayout> 
+  	</com.huangmj.myphonebook.WrapSlidingDrawer>
+  	-->
+</RelativeLayout>  

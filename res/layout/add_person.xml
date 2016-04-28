@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/number_shap"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+        android:id="@+id/imagofperson"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="6dp"
+        android:src="@drawable/person_default"
+        android:onClick="choosePic"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+         />
+
+         <EditText
+             android:id="@+id/editNumber"
+             android:layout_width="wrap_content"
+             android:layout_height="50dp"
+             android:layout_marginLeft="6dp"
+             android:layout_marginRight="6dp"
+             android:layout_marginTop="20dp"
+             android:layout_toRightOf="@+id/imagofperson"
+             android:ems="15"
+             android:background="@drawable/bg_edittext"  
+             android:textSize="30dip"
+             android:textColor="#222222"
+             android:hint="号码"
+             android:inputType="phone" />
+         
+         <Spinner 
+	        android:id="@+id/add_spinner_person_type"
+	        android:layout_width="wrap_content"
+	         android:layout_height="50dp"
+             android:layout_marginLeft="6dp"
+             android:layout_marginRight="6dp"
+             android:layout_marginTop="80dp"
+             android:paddingLeft="30dp"
+             android:textSize="30dip"
+             android:paddingRight="30dp"
+	        android:layout_toRightOf="@+id/imagofperson"
+	        android:background="@drawable/bg_edittext"
+	        />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/imagofperson"
+        android:background="@drawable/bg_edittext"  
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="142dp"
+         android:textColor="#222222"
+        android:ems="15"
+        android:hint="备注" />
+        
+    </RelativeLayout>
+    
+    <Button 
+        android:id="@+id/submit_but"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:textSize="12pt"
+        android:textColor="#CED9DD"
+        android:background="@drawable/button_shap"
+        android:text="保存"
+        />
+    <!--  
+    <Button 
+        android:id="@+id/submit_call_but"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:textSize="12pt"
+        android:textColor="#CED9DD"
+        android:background="@drawable/button_shap"
+        android:text="保存并拨打"
+        />-->
+<!-- 892532819@qq.com(欢迎意见建议)\n -->
+    <TextView
+        android:id="@+id/textView1"
+        
+        android:layout_marginTop="290dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#B2B29A"
+        android:text="2016.4.15 v1.9(Test)" />
+    <TextView
+        android:id="@+id/textView1"
+        
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#B2B29A"
+        android:text="Powered by huangmj 892532819@qq.com" />
+
+</LinearLayout>

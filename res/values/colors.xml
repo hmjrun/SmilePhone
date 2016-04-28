@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_out_call">#48B943</color>
+    <color name="color_in_call">#EA8010</color>
+    <color name="color_miss_call">#EB513B</color>
+</resources>
